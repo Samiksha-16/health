@@ -1,0 +1,305 @@
+@import url(https://fonts.google.com/specimen/Baloo+2?query=baloo+);
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+.left img{
+    height: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(18,18,62);
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #0075FF;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+.leftsection{
+    font-size:3rem ;
+    margin: 40px 0;
+    font-weight: 800;
+}
+.leftsection .btn{
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn{
+    padding: 5px;
+ 
+     background: #0075FF;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button a{
+    color: white;
+
+    text-decoration: none;
+}
+.btn:hover{
+    background: rgb(214, 155, 185);
+  
+}
+.firstsection >div{
+width: 30%;
+}
+.rightsection img{
+    width: 100%;
+    border-radius: 50%;
+height:420px;
+}
+.project p{
+    font-size:3rem ;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 70px;
+}
+.thirdsection{
+    margin: 80px 0;
+}
+.home-articles {
+ 
+    width: 30%;
+}
+
+
+
+
+
+.home-articles2 {
+    padding: 38px;
+    width: 30%;
+
+}
+
+.home-article-img img {
+    width: 300px;
+    border: 2px solid purple;
+}
+
+.home-article {
+    /* display: flex; */
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    /* width: 50%; */
+
+}
+
+
+.home-article-content p {
+    padding-bottom: 30px;
+}
+
+.home-article-content h3 {
+    margin-bottom: 15px;
+}
+
+.home-articles1 h2 {
+    margin-bottom: 20px;
+}
+
+.thirdsection .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+   margin-left: 90px;
+  }
+  .wrapper i {
+    /* margin-left: 190px; */
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    color: #1e2167;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 150px;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    border:solid 2px #0b0436 ;
+    background: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+    );
+    background-size: 550px;
+    background-repeat: no-repeat;
+  }
+ 
+  .carousel .card h2 {
+    font-weight: bolder;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    color: rgb(7, 7, 7);
+  }
+  .carousel .card p{
+    display: flex;
+    justify-content: center;
+  }
+  .carousel .card span{
+    color: #03020a;
+  }
+
+ .btn a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .projectcard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .reach{
+    background-color: #0075FF;
+    height: 20px;
+  
+    margin-top: 10px;
+    width: 100%;
+}
+.reach p{
+  color: white;
+}
+.leftfooter ul li a {
+    display: flex;
+
+    padding: 10px 20px;
+    font-size: 30px;
+
+}
+
+.footer h6{
+    color: white;
+justify-content: center;
+align-content: center;
+align-items: center;
+font-size: 12px;
+display: flex;
+/* float: left; */
+flex-direction: row;
+font-family: "baloo", sans-serif;
+
+  }
+
+.get p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Poppins';
+margin-top: 40px;
+/* color: #0075FF; */
+/*  */
+}
+.quicklinks {
+    padding: 10px;
+    text-align: center;
+    /* font-weight: bold; */
+    color: white;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+}
+
+.leftfooter{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.row ul{
+  display: flex;
+}
+.row ul li{
+list-style: none;}
+.row ul li a{
+  text-decoration: none;
+  color: #0075FF;
+}
